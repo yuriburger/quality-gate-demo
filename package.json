@@ -1,0 +1,36 @@
+{
+  "name": "sonar-ts-demo",
+  "version": "1.0.0",
+  "description": "Sonar Qube Quality Gate Demo",
+  "main": "dist/hello.component.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuriburger/quality-gate-demo"
+  },
+  "keywords": [
+    "vsts",
+    "karma",
+    "selenium",
+    "typescript"
+  ],
+  "author": "Yuri Burger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuriburger/quality-gate-demo"
+  },
+  "homepage": "https://github.com/yuriburger/quality-gate-demo#readme",
+  "devDependencies": {
+    "@types/jasmine": "^2.8.2",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.1.1",
+    "karma-typescript": "^3.0.8",
+    "typescript": "^2.5.2"
+  }
+}
