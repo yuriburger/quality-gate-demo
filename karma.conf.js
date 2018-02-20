@@ -10,6 +10,20 @@ module.exports = function(config) {
         preprocessors: {
             "**/*.ts": ["karma-typescript"]
         },
+        karmaTypescriptConfig: {
+            reports:
+            {
+                "lcovonly": {
+                    "directory": "coverage",
+                    "filename": "lcov.info",
+                    "subdirectory": "lcov"
+                },
+                "html": {
+                    "directory": "coverage",
+                    "subdirectory": "html"
+                }
+            }
+        },
         reporters: ["dots","karma-typescript"],
         browsers: ["ChromeHeadless"],
         customLaunchers: {
