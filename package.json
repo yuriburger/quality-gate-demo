@@ -33,6 +33,7 @@
     "karma-cli": "^1.0.1",
     "karma-jasmine": "^1.1.1",
     "karma-typescript": "^3.0.8",
+    "karma-webdriver-launcher": "^1.0.5",
     "sonarqube-scanner": "^2.0.2",
     "tslint-sonarts": "^1.4.0",
     "typescript": "^2.5.2"
