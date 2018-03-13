@@ -1,5 +1,13 @@
 module.exports = function(config) {
 
+    const isTeamFoundationBuild = process.env.TF_BUILD ? true : false;
+    const browsers = isTeamFoundationBuild ? ['ChromeSelenium'] : ['ChromeHeadless'];
+
+    const webdriverConfig = {
+        hostname: 'webdriver',
+        port: 4444
+    }
+
     config.set({
         hostname: 'localhost',
         port: 9876,
@@ -25,7 +33,7 @@ module.exports = function(config) {
             }
         },
         reporters: ["dots","karma-typescript"],
-        browsers: ["ChromeHeadless"],
+        browsers: browsers,
         customLaunchers: {
             ChromeHeadless:  {
                 base:   'Chrome',
@@ -34,7 +42,13 @@ module.exports = function(config) {
                   '--disable-gpu',
                   '--remote-debugging-port=9222',
                 ],
-              }
+            },
+            ChromeSelenium: {
+                base: 'WebDriver',
+                config: webdriverConfig,
+                browserName: 'ChromeSelenium',
+                flags: []
+            }
         },
         singleRun: true
     });
