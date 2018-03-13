@@ -2,6 +2,7 @@ module.exports = function(config) {
 
     const isTeamFoundationBuild = process.env.TF_BUILD ? true : false;
     const browsers = isTeamFoundationBuild ? ['ChromeSelenium'] : ['ChromeHeadless'];
+    const karmaHost = isTeamFoundationBuild ? 'agent' : 'localhost';
 
     const webdriverConfig = {
         hostname: 'webdriver',
@@ -9,7 +10,7 @@ module.exports = function(config) {
     }
 
     config.set({
-        hostname: 'localhost',
+        hostname: karmaHost,
         port: 9876,
         frameworks: ["jasmine", "karma-typescript"],
         files: [
