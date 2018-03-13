@@ -45,7 +45,7 @@ module.exports = function(config) {
                 ],
             },
             ChromeSelenium: {
-                base: 'WebDriver',
+                base: 'Chrome',
                 config: webdriverConfig,
                 browserName: 'ChromeSelenium',
                 flags: []
