@@ -1,5 +1,5 @@
 {
-  "name": "sonar-ts-demo",
+  "name": "quality-gate-demo",
   "version": "1.0.0",
   "description": "Sonar Qube Quality Gate Demo",
   "main": "dist/hello.component.js",
