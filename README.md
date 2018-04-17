@@ -3,7 +3,7 @@ Visual Studio Team Services Sonar Qube Quality Gate Demo
 
 This source code is part of a blogpost about Sonar Qube Quality Gates for JavaScript builds on Visual Studio Team Services.
 
-More info: [Quality at the gate: SonarQube Quality Gates and VSTS builds](https://yuriburger.net/)
+More info: [SonarQube Quality Gates and VSTS builds](https://yuriburger.net/)
 
 To setup the demo:
 
